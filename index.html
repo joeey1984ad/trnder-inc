@@ -1,46 +1,64 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+<!doctype html>
+<html manifest="manifest.appcache" lang="en"> 
+	<head> 
+        <title>APPLICATION NAME</title> 
+        
+        <!-- WEB SEARCH META TAGS -->
+        <meta charset="utf-8">
+        <meta name="application-name" content="APPLICATION NAME" />
+        <meta name="author" content="AUTHOR NAME (@TWITTER)" />
+        <meta name="description" content="APPLICATION DESCRIPTION" />
+        <meta name="keywords" content="keywords,separated,by,commas" />
+        <meta name="copyright" content="© 2013 AUTHOR" />
+        <meta name="generator" content="AUTHOR" />
+        <meta name="robots" content="index,follow,snippet,archive" />
+        <meta name="revisit-after" content="7 days">
+        
+        <!-- SAFARI WEB APP META TAGS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+        <!-- iOS FAVICONS -->
+        <link rel="apple-touch-icon-precomposed" href="img/icons/favicons/icon57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/favicons/icon57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/favicons/icon72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/favicons/icon76.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/favicons/icon114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/favicons/icon120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/favicons/icon144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/favicons/icon152.png">
 
-    http://www.apache.org/licenses/LICENSE-2.0
+        <!-- OTHER FAVICONS -->
+        <link rel="icon" sizes="16x16" type="image/vnd.microsoft.icon" href="img/icons/favicons/icon16.ico">
+        <link rel="icon" sizes="16x16" type="image/png" href="img/icons/favicons/icon16.png">
+        <link rel="icon" sizes="32x32" type="image/png" href="img/icons/favicons/icon32.png">
+        <link rel="icon" sizes="64x64" type="image/png" href="img/icons/favicons/icon64.png">
+        <link rel="icon" sizes="any" type="image/svg+xml" href="img/icons/favicons/icon.svg">
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+        <!-- iOS Splash Screens -->
+        <!-- iPhone -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+        <!-- iPhone (Retina) -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+        <!-- iPhone 5 -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+        <!-- iPad -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+        <!-- iPad (Retina) -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+            
+        <!-- ADD2HOME META TAGS -->
+        <link rel="stylesheet" type="text/css" href="js/lib/add2home.css">
+        <script type="application/javascript" src="js/lib/add2home.js"></script>
+    </head> 
+    <body> 
+        
+        App Content
+        
+        <!-- SCRIPTS -->
+        <script type="application/javascript" src="js/lib/jquery-2.0.3.js"></script>
     </body>
 </html>
